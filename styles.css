@@ -303,7 +303,8 @@ background-attachment: fixed; */
 
 .my-details{
     border-top: 0.3rem solid rgb(4, 189, 189) ;
-    height: 115vh;
+    height: 60rem;
+    padding-top: 5rem;
     background-color: rgb(0, 0, 11);
     display: flex;
     flex-direction: column;
@@ -335,7 +336,6 @@ background-attachment: fixed; */
 
 .my-details .identity .image .image-box{
     height:60%;
-    width:42.5%;
     border: 0.4rem solid rgb(4, 189, 189);
    
 }
@@ -459,7 +459,7 @@ background-attachment: fixed; */
 
 
 .resume{
-  height:30vh;
+  height:15rem;
   width:100%;
   /* background-color: #030002; */
   background-color: rgb(0, 0, 11);
@@ -474,8 +474,9 @@ background-attachment: fixed; */
 
 .resume .block {
   position: relative;
-  /*margin: 300px auto 0;
-  */width: 30%;
+  /*margin: 300px auto 0;*/
+  /* width: 30%; */
+  padding: 0 5rem;
   height: 50%;
   display: flex;
   flex-direction:row;
@@ -544,14 +545,15 @@ background-attachment: fixed; */
 
 
 .education{
-  height:220vh;
+  height:90rem;
   width:100%;
   background-color:rgb(35, 39, 46);
-
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   border-top: 0.3rem solid rgb(4, 189, 189) ;
   display: flex;
   flex-direction:column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   font-family: 'Open Sans', sans-serif; 
   }
@@ -573,7 +575,7 @@ background-attachment: fixed; */
     color:rgba(0, 0, 0, 0);
     -webkit-background-clip:text;
     background-clip:text; position:relative;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   margin-bottom: 2rem;
   display: flex;
   flex-direction:row;
@@ -588,8 +590,8 @@ background-attachment: fixed; */
 }
 
 .education .education-icon{
-  height:5.3%;
-  width:6.3%;
+  height:5.5rem;
+  width:5.5rem;
   background-color:  rgb(35, 39, 46);
   display: flex;
   flex-direction:row;
@@ -611,7 +613,7 @@ background-attachment: fixed; */
   font-size: 3rem;
 }
 .education .education-box{
-  height:60%;
+  height:75%;
   width:60%;
   color:white;
   /* background-color: pink; */
@@ -719,7 +721,7 @@ background-attachment: fixed; */
 
 .proffessional-skills{
   background-color: rgb(35, 39, 46);
-  height: 120vh;
+  height: 75rem;
   width: 100%;
   display: flex;
   flex-direction:column;
@@ -732,7 +734,7 @@ background-attachment: fixed; */
   font-size: 3rem;
   color: white;
   margin-top: 4rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 }
 
 .proffessional-skills .skill-boxes{
@@ -749,6 +751,7 @@ background-attachment: fixed; */
   width: 20%;
   height:130%;
   /* background-color: rgb(242,242,242); */
+  margin-bottom: 5rem;
   
   background-position: center;
   background-size: contain;
@@ -764,6 +767,10 @@ background-attachment: fixed; */
   font-size: 1.5rem;
   font-weight: 500;
   background-size: 70%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:flex-end;
 }
 
 
@@ -820,7 +827,7 @@ background-attachment: fixed; */
 overflow: hidden;
 position: relative;
   /* background-color: rgb(1, 0, 7); */
-  height: 240vh;
+  height: 150rem;
   width:100%;
   display: flex;
   flex-direction:column;
@@ -958,8 +965,8 @@ position: relative;
   font-family: cursive;
   background-image:linear-gradient(to right, #070139, #000000);
   border-radius: 50%;
-  height: 4%;
-  width: 5%;
+  height: 5rem;
+  width: 5rem;
   transform: translate(-2rem,-4rem);
   display: flex;
   position: absolute;
@@ -972,7 +979,7 @@ position: relative;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -webkit-transform: translate(-2rem,-4rem);
+  -webkit-transform: translate(-2rem,-3rem);
   -moz-transform: translate(-2rem,-4rem);
   -ms-transform: translate(-2rem,-4rem);
   -o-transform: translate(-2rem,-4rem);
@@ -999,7 +1006,7 @@ position: relative;
 
 
 .contact{
-  height: 100vh;
+  height: 60rem;
   background-color: rgb(35, 39, 46);
   display: flex;
   flex-direction: column;
@@ -1084,6 +1091,10 @@ position: relative;
   justify-content: space-between;
   width: 100%;
   
+}
+
+.login-box .details-container .user-box .half-size{
+  width: 35rem;
 }
 
 .login-box h2 {
@@ -1248,3 +1259,38 @@ position: relative;
     bottom: 100%;
   }
 }
+
+
+
+
+/* ************************ */
+/* RESPONSIVE MEDIA QUERIES */
+/* ************************ */
+
+@media only screen and (max-width: 1450px) {
+  .login-box .details-container .user-box .half-size{
+    width: 32.5rem;
+  }
+}
+
+@media only screen and (max-width: 1325px) {
+  .login-box .details-container .user-box .half-size{
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .login-box .details-container .user-box .half-size{
+    width: 26.5rem;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+  .my-details .identity{
+    width: 100%;
+  }
+}
+
+/*! ************************ */
+/*! RESPONSIVE MEDIA QUERIES */
+/*! ************************ */
