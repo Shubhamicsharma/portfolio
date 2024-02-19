@@ -1,14 +1,16 @@
 
 const myNav = document.querySelector(".my-navbar");
+const myNavList = document.querySelector(".nav-list");
 
 window.onscroll = function () {
   if (window.scrollY > window.innerHeight) {
       myNav.classList.add("scrolled");
+      myNavList.classList.add("scrolled");
   } else {
       myNav.classList.remove("scrolled");
+      myNavList.classList.remove("scrolled");
   }
 };
-
 
 
 
@@ -57,27 +59,28 @@ window.onload = function() {
     selector: '.background',
     maxParticles: 130,
     sizeVariations:5,
-    connectParticles: true,
+    connectParticles: false,
     color:'#ffffff',
+    
   // options for breakpoints
     responsive: [
       {
         breakpoint: 768,
         options: {
-          maxParticles: 200,
-          color: '#ffffff',
-          connectParticles: true
-        }
-      }, {
-        breakpoint: 425,
-        options: {
           maxParticles: 100,
-          connectParticles: true
+          color: '#ffffff',
+          // connectParticles: true
         }
       }, {
-        breakpoint: 320,
+        breakpoint: 625,
         options: {
-          maxParticles: 0 // disables particles.js
+          maxParticles: 75,
+          // connectParticles: true
+        }
+      }, {
+        breakpoint: 420,
+        options: {
+          maxParticles: 50 // disables particles.js
         }
       }
     ]
@@ -91,3 +94,26 @@ window.onload = function() {
 
 
 
+  document.getElementById('scrollBtnAbout').addEventListener('click', function() {
+    document.getElementById('about').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  });
+  document.getElementById('scrollBtnEducation').addEventListener('click', function() {
+    document.getElementById('education').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  });
+  
+  document.getElementById('scrollBtnProjects').addEventListener('click', function() {
+    document.getElementById('projects').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  });
+  
+  document.getElementById('scrollBtnSkills').addEventListener('click', function() {
+    document.getElementById('skills').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  });
+  
